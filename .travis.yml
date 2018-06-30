@@ -39,6 +39,10 @@ matrix:
               - BUILD_DOCS=true
               - DEPLOY_DOCS=true
               - DEPLOY_PYPI=true
+        - os: linux
+          env:
+              - PYTHON=3.7
+              - BUILD_DOCS=true
         - os: osx
           env:
               - PYTHON=3.5
@@ -47,6 +51,10 @@ matrix:
           env:
               - PYTHON=3.6
               - COVERAGE=true
+              - BUILD_DOCS=true
+        - os: osx
+          env:
+              - PYTHON=3.7
               - BUILD_DOCS=true
 
 before_install:
